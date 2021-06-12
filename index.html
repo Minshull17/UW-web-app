@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portal</title>
+	<style>
+	
+		p {
+			margin: 0;
+		}
+		body {
+			background-color: white;
+			Margin: 0;
+			
+			
+		}
+		header {
+			background-color: #2b2d2e;
+			border-bottom:3px solid #89cb31;
+ 			height:67.5px;
+			line-height: 67.5px;
+			position: relative;
+			font-family: Libre Franklin;
+		}
+		a {
+			color: #8bca37;
+			font-size:24px;
+		}
+		button{
+			padding:13px;
+		}
+		
+		.hiddentext {
+			font-size: 0.01px;
+			color: white;
+		}
+		.datecopy {
+			font-size: 10px
+			font-family: Arial
+		}
+		#wrapper {
+ 		 clear: both;
+		}
+	</style>
+	
+	<script>
+	function copyToClipboard(element) {
+  	var text = $(element).clone().find('br').prepend('\r\n').end().text()
+	  element = $('<textarea>').appendTo('body').val(text).select()
+ 	 document.execCommand('copy')
+ 	 element.remove()
+	}
 
+	function cpy(n)
+	{
+	var id=n;
+	var txt=document.getElementById(id);
+	txt.select();
+	document.execCommand("copy");
+	};
+	</script>
+
+</head>
+	<header><center><a>Home</a> &nbsp;&nbsp; <a href="https://minshull17.github.io/conditions-list/">Conditions</a> &nbsp;&nbsp;<a href="https://minshull17.github.io/templates/">Templates</a></center></header>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <p style="color:wheat;font-size:55px;text-align:center;"></p>
+
+<center>
+<p><pre id="p1" class="hiddentext">Loan reduced to new maximum following down      
+valuation of the property.</pre></p>
+	
+<p id="p2" class="hiddentext">ToE case owner: Rob Minshull</p><br/>	
+<p id="p3" class="hiddentext">Thank you for sending the rental bank statements, I have assessed
+these and require some further clarification on the following items:</p>
+<p id="p4" class="hiddentext">Thank you for sending the company accounts, I have assessed<br>these and require some further clarification on the following items:
+</p>	
+<p id="p5" class="hiddentext">The solicitor must confirm prior to funds release that there is a<br>performing block management company in place together with appropriate<br>management and maintenance obligations that will ensure the ongoing<br>upkeep of the block/development.</p>
+<p id="p6" class="hiddentext">We have attempted to call you today to discuss the application, if<br>there are any points on this letter you wish to discuss then you <br>can reach me by calling 0345 849 4040 and asking to speak to the <br>underwriter.</p>
+<p id="p20" class="hiddentext">Please second check HMLR - no issues 
+noted from first check.</p>
+<p id="p21" class ="hiddentext">Thank you for sending in the tax calculations and tax year overviews, <br>please also provide the corresponding Sa100 tax return forms for each <br>year.<br>Please note that copies are available to download from the HMRC online<br>services website.
+<p id="p23" class="hiddentext">We are in receipt of a new application for the above-mentioned<br>property. Under new regulations, we require a schedule of all<br>properties in the client's portfolio (Limited Companies and personal<br>name) before we can underwrite the case.<br><br>Please forward this to us at your earliest convenience. Please note<br>we are unable to start the underwriting process until this is received.<br><br>To ensure this is allocated to the account and worked as quickly as<br>possible can you please insert the account number and ‘property<br>schedule’ in the email subject line.<br><br>A template of a property schedule can be found on our website<br>www.paragonbank.co.uk/intermediary/documents.</p>
+<p id="p26" class="hiddentext">The above mortgage application has been declined.<br>I confirm that regrettably, on this occasion, we are unable to<br>provide you with any additional information regarding our lending<br>decision. As you are aware, we reserve the right to accept or decline<br>an Application without reason and this is included in the<br>declaration that your client accepts when submitting the application.<br>Our Published Lending Guidelines also clearly state<br>(in Section 10 under Final decision) that we reserve the absolute<br>discretion to determine whether to make an offer and the terms on<br>which the offer is made.</p>
+<p id="p8" class="hiddentext">CFF & NWS both waived - see risk document for       
+further info.</p>
+<p id="p9" class="hiddentext">All three waived - see risk document for 
+further info.</p><br/>
+<p id="p10" class="hiddentext">We have attempted to contact you today</p>
+<p id="p11" class="hiddentext">Loan reduced to new maximum following down valuation.</p>
+<p><pre id="p12" class="hiddentext">ER          R<br>EC          I</pre></p>
+<p id="p13" class="hiddentext">We have attempted to contact you today</p>
+
+<button onclick="copyToClipboard('#p1')">Max loan down val</button>
+<button onclick="copyToClipboard('#p2')">ToE caseowner</button>
+<button onclick="copyToClipboard('#p3')">Bank statements</button>
+<button onclick="copyToClipboard('#p4')">Company accounts</button>
+<button onclick="copyToClipboard('#p5')">Perf mgmt co.</button>
+<button onclick="copyToClipboard('#p6')">Callback AP</button>
+
+	<div>	
+<button onclick="copyToClipboard('#p21')">Sa100s missing</button>
+<button onclick="copyToClipboard('#p22')">TYOs missing</button>
+<button onclick="copyToClipboard('#p23')">Await property schedule</button>
+<button onclick="copyToClipboard('#p24')">Aditional properties found</button>
+<button onclick="copyToClipboard('#[20')">Place holder</button>
+<button onclick="copyToClipboard('#p26')">FC decline</button>
+</div>	
+	
+  <br>
+
+<textarea id='n' cols="90" rows="25"></textarea>
+<button onclick="cpy('n')">Copy</button>
+<br>
+<button onclick="copyToClipboard('#p8')">CFF & NWS</button>
+<button onclick="copyToClipboard('#p9')">All three waived</button>
+<button onclick="copyToClipboard('#p10')">Sa100s</button>
+<button onclick="copyToClipboard('#p11')">TC/TYOs</button>
+<button onclick="copyToClipboard('#p12')">ER/EC</button>
+<button onclick="copyToClipboard('#p13')">Callback AP</button>
+
+<p id="p80" class="hiddentext">STA<br>Q00032</p>
+<p id="p90" class="hiddentext"></p><br/>
+<p id="p100" class="hiddentext">We have attempted to contact you today</p>
+<p id="p110" class="hiddentext">STA<br>T00048</p>
+	<p font-size:12px><strong>Action points</strong><br>
+
+<button onclick="copyToClipboard('#p80')">Vendor details</button>
+<button onclick="copyToClipboard('#p90')">Main acc</button>
+<button onclick="copyToClipboard('#p100')">Linked acc</button>
+<button onclick="copyToClipboard('#p110')">FA DDM</button>
+	</p>
+	<div>
+		<p font-size:12px><strong>Kofax</strong><br>
+	<button onclick="location.href='mailto:Kofax.Ariespost@paragonbank.co.uk?body=NB%0d%0a';">Kofax post</button>
+	<button onclick="location.href='mailto:Kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0a';">Kofax notes</button>
+	<button onclick="ltdcoFunction()">LTDCOSR</button>
+		<script>
+		function ltdcoFunction() {
+		window.location.href = "mailto:kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0aLTDCOSR%0d%0a"+ new Date().toLocaleDateString();
+		}
+		</script>
+	<button onclick="lrFunction()">HMLR</button>
+		<script>
+		function lrFunction() {
+		window.location.href = "mailto:kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0aHMLR%0d%0a"+ new Date().toLocaleDateString();
+		}
+</script>
+
+			
+	</div>
+	</p>
+
+
+
+
+</center>
+
+
+
+</body>
+</html>
