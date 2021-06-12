@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Templates</title>
+	<style>
+	
+		p {
+			margin: 0;
+		}
+		body {
+			background-color: white;
+			Margin: 0;
+			
+			
+		}
+		header {
+			background-color: #2b2d2e;
+			border-bottom:3px solid #89cb31;
+height:67.5px;
+line-height: 67.5px;
+position: relative;
+		}
+		a {
+			color: #8bca37;
+			font-size:24px;
+		}
+		button{
+			padding:13px;
+		}
+		
+		.hiddentext {
+			font-size: 0.01px;
+			color: white;
+		}
+		.datecopy {
+			font-size: 10px
+			font-family: Arial
+		}
+		#wrapper {
+  clear: both;
+}
+	</style>
+	<script>
+function copyToClipboard(element) {
+  var text = $(element).clone().find('br').prepend('\r\n').end().text()
+  element = $('<textarea>').appendTo('body').val(text).select()
+  document.execCommand('copy')
+  element.remove()
+}
 
+function cpy(n)
+{
+var id=n;
+var txt=document.getElementById(id);
+txt.select();
+document.execCommand("copy");
+};
+		
+
+</script>
+<script>
+	function todayDate(Date)
+	{
+var currentTime = new Date();
+	};
+	</script>
+
+ 
+</script>
+
+</head>
+	<header><center><a href="index.html">Home</a> &nbsp;&nbsp; <a href="https://minshull17.github.io/conditions-list/">Conditions</a> &nbsp;&nbsp;<a>Templates</a></center></header>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <p style="color:wheat;font-size:55px;text-align:center;"></p>
+
+
+	<p font-size:175px><strong><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tax documents &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bank statements</strong></p>
+	<!-- Tax documents, large amounts of white space required to space out the template correctly -->
+	<p><pre id="p1" class="hiddentext">                                             2020                     2019
+Gross rent                            
+Repairs                               
+Interest                               
+Resi finance                       
+UK L&P                                
+
+Total                                      
+Overview                                 </pre></p>
+<p><pre id="p2" class="hiddentext">                                             2020                     2019
+UK L&P                                                                                                        
+                                                                               
+Total                                                                          
+Overview                                                                       </pre></p>
+<p><pre id="p3" class ="hiddentext">xxxx, //-//
+Subject company business acc. - 
+Conduct - 
+Rental income -
+Mortgage payments - 
+Closing balance // = £</pre></p>
+<p><pre id="p4" class ="hiddentext">xxxx, //-//
+Joint personal name acc. - 
+Conduct - 
+Rental income -
+Mortgage payments - 
+Closing balance // = £</pre></p>
+<p><pre id="p5" class ="hiddentext">xxxx, //-//
+App 1 sole personal name acc. - 
+Conduct - 
+Rental income -
+Mortgage payments - 
+Closing balance // = £</pre></p>
+<p><pre id="p6" class ="hiddentext">xxxx, //-//
+App 2 sole personal name acc. - 
+Conduct - 
+Rental income -
+Mortgage payments - 
+Closing balance // = £</pre></p>
+
+
+&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p1')">Full tax documents</button>
+<button onclick="copyToClipboard('#p2')">Calculation & TYO</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p3')">SPV bank statements</button>
+<button onclick="copyToClipboard('#p4')">Joint personal name</button>
+<button onclick="copyToClipboard('#p5')">App 1 sole name</button>
+<button onclick="copyToClipboard('#p6')">App 2 sole name</button>
+
+
+<p><pre id="p8" class="hiddentext">Subject company accounts for y/e //, prepared by :<br><br>                    2020                    2019<br>Turnover           <br>Admin expenses          <br>Pre-tax P/L         <br><br>Fixed assets         <br>Net assets          </pre></p>
+<p id="p9" class="hiddentext">All three waived - see risk document for 
+further info.</p><br/>
+	<p><pre  id="p10" class="hiddentext">Valuation = £/£pcm
+ rental demand and suitability
+
+Conditions added as per recommendations on the report.</pre></p>
+<p><pre id="p11" class="hiddentext">Valuation = £/£pcm
+Maximum loan @ xx% LTV = £
+ rental demand and suitability
+
+Conditions added as per recommendations on the report.</pre></p></pre></p>
+<p id="p12" class="hiddentext">&#160ER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<br>&#160EC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I</p>
+<p id="p13" class="hiddentext">We have attempted to contact you today</p>
+<p><pre id="p90" class="hiddentext">IRB Grade:  (live accounts: )
+Risk navigator score:  ()
+Unsecured - 
+Mortgages - 
+</pre></p>
+<br>
+<br>
+<br>
+<p font-size:175px><strong><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Accounts&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Valuation&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Company search&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Credit search&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;KYC</strong><p>
+&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p8')">SPV accounts</button>
+<button onclick="copyToClipboard('#p9')">Other accounts</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p10')">Valuation</button>
+<button onclick="copyToClipboard('#p11')">LTV max loan</button>
+<button onclick="copyToClipboard('#p12')">ICR max loan</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p80')">Creditsafe search</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p90')">Credit search</button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<button onclick="copyToClipboard('#p91')">KYC/RBA</button>
+
+			
+	</div>
+	</p>
+
+
+
+
+</center>
+
+
+
+</body>
+</html>
