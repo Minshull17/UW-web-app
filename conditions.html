@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+  		header {
+			background-color: #2b2d2e;
+			border-bottom:3px solid #89cb31;
+height:67.5px;
+line-height: 67.5px;
+position: relative;
+		}
+	body {
+		margin: 0;
+	}
+		a {
+			color: #8bca37;
+			font-size:24px;
+		}
 
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+  <header><center><a href="https://minshull17.github.io/PBGportal.github.io/">Home</a> &nbsp;&nbsp; <a>Conditions</a> &nbsp;&nbsp;<a href="https://minshull17.github.io/templates/">Templates</a></center></header>
+<body>
+
+<h2>&nbsp;&nbsp;Condition codes</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for condition.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Code</th>
+    <th style="width:40%;">Condition</th>
+  </tr>
+  <tr>
+    <td>H63</td>
+    <td>Apps own sols acting</td>
+  </tr>
+  <tr>
+    <td>H64</td>
+    <td>Pay after initial period</td>
+  </tr>
+  <tr>
+    <td>H65</td>
+    <td>Portability</td>
+  </tr>
+    <tr>
+    <td>H67</td>
+    <td>Applicant and vendor relationship</td>
+  </tr>
+    <tr>
+    <td>H68</td>
+    <td>Vendor abroad</td>
+  </tr>
+    <tr>
+    <td>H80</td>
+    <td>Contra Settlement on MTL/PML</td>
+  </tr>
+    <tr>
+    <td>F01</td>
+    <td>Lease extension</td>
+  </tr>
+    <tr>
+    <td>F06</td>
+    <td>Solicitor acting</td>
+  </tr>
+	  </tr>
+    <tr>
+    <td>F07</td>
+    <td>Building and planning</td>
+  </tr>
+    <tr>
+    <td>F10</td>
+    <td>Non HMO selective license (PA2)</td>
+  </tr>
+    <tr>
+    <td>F56</td>
+    <td>Further Advance/Product S</td>
+  </tr>
+    <tr>
+    <td>F57</td>
+    <td>Affordability assessment</td>
+  </tr>
+
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
