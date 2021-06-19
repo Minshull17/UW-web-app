@@ -78,7 +78,7 @@ var currentTime = new Date();
         <p style="color:wheat;font-size:55px;text-align:center;"></p>
 
 <center>
-	<p font-size:175px><strong><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tax documents &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bank statements</strong></p>
+
 	<!-- Tax documents, large amounts of white space required to space out the template correctly -->
 	<p><pre id="p1" class="hiddentext">                                             2020                     2019
 Gross rent                            
@@ -120,10 +120,11 @@ Mortgage payments -
 Closing balance // = £</pre></p>
 
 
-&emsp;&emsp;&emsp;&emsp;
+<div>
+	<p>Income</p>
 <button onclick="copyToClipboard('#p1')">Full tax documents</button>
 <button onclick="copyToClipboard('#p2')">Calculation & TYO</button>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</div>
 <button onclick="copyToClipboard('#p3')">SPV bank statements</button>
 <button onclick="copyToClipboard('#p4')">Joint personal name</button>
 <button onclick="copyToClipboard('#p5')">App 1 sole name</button>
