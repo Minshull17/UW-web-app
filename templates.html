@@ -56,6 +56,14 @@ txt.select();
 document.execCommand("copy");
 };
 		
+function del(n)
+{
+var id=n;
+var txt=document.getElementById(id);
+txt.select();
+document.execCommand("delete");
+};
+		
 
 </script>
 <script>
@@ -192,6 +200,7 @@ Conditions added as per recommendations on the report.</pre></p></pre></p>
 </div>
 
 <br>
+<button onclick="del('n')">Delete</button>
 <textarea id='n' cols="85" rows="23"></textarea>
 <button onclick="cpy('n')">Copy</button>
 <br>
