@@ -40,7 +40,7 @@ function del(n){
 };
 // Opens an email pre-filled for the manual further advance calculator to be imaged
 function praFunction() {
-    window.location.href = "mailto:kofax.AriesNotes@paragonbank.co.uk?body=APP%0d%0aPRAFALN%0d%0a"+ new Date().toLocaleDateString();
+    window.location.href = "mailto:kofax.AriesNotes@paragonbank.co.uk?body=NB%0d%0aPRAFALN%0d%0a"+ new Date().toLocaleDateString();
  }
 
 
