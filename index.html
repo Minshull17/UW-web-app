@@ -4,34 +4,8 @@
 	<title>Web app</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
 	<link rel="stylesheet" href="styles.css">
-	
-	<script>
-	function copyToClipboard(element) {
-  	var text = $(element).clone().find('br').prepend('\r\n').end().text()
-	  element = $('<textarea>').appendTo('body').val(text).select()
- 	 document.execCommand('copy')
- 	 element.remove()
-	}
-
-	function cpy(n)
-	{
-	var id=n;
-	var txt=document.getElementById(id);
-	txt.select();
-	document.execCommand("copy");
-	};
-		
-	function del(n)
-	{
-	var id=n;
-	var txt=document.getElementById(id);
-	txt.select();
-	document.execCommand("delete");
-	};
-	</script>
-
+	<script src="functions.js"></script>
 </head>
-
 	<header><center><a>Home</a> &nbsp;&nbsp; <a href=templates.html>Templates</a> &nbsp;&nbsp;<a href=conditions.html>Conditions</a>&nbsp;&nbsp;<a href="niche.html">Niche</a></center></header>
 <body>
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 

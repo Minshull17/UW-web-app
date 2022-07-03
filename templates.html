@@ -3,42 +3,7 @@
 <head>
 	<title>Templates</title>
 	<link rel="stylesheet" href="styles.css">
-	<script>
-function copyToClipboard(element) {
-  var text = $(element).clone().find('br').prepend('\r\n').end().text()
-  element = $('<textarea>').appendTo('body').val(text).select()
-  document.execCommand('copy')
-  element.remove()
-}
-
-function cpy(n)
-{
-var id=n;
-var txt=document.getElementById(id);
-txt.select();
-document.execCommand("copy");
-};
-		
-function del(n)
-{
-var id=n;
-var txt=document.getElementById(id);
-txt.select();
-document.execCommand("delete");
-};
-		
-
-</script>
-<script>
-	function todayDate(Date)
-	{
-var currentTime = new Date();
-	};
-	</script>
-
- 
-</script>
-
+	<script src="functions.js"></script>
 </head>
 	<header><center><a href="index.html">Home</a> &nbsp;&nbsp; <a>Templates</a> &nbsp;&nbsp;<a href="conditions.html">Conditions</a> &nbsp;&nbsp;<a href="niche.html">Niche</a></center></header>
 <body>
