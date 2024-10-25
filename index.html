@@ -121,18 +121,18 @@ further info.</p><br/>
 <!-- text box to allow either free format text to be entered or copied to (e.g copying surveyor details when reviewing a valuation due to not being able to open two AS400 
 sessions at the same time) or potentially for amending certain copied text prior to pasting to risk document/Aries -->
 <button onclick="del('n')">Delete</button>
-<textarea id='n' cols="85" rows="23" oninput="updateCharCount()"></textarea>
+<textarea id='n' cols="85" rows="23" oninput="updateCharCount()" placeholder="0 characters"></textarea>
 <button onclick="cpy('n')">Copy</button>
 <br>
-<div id="charCount">0 characters</div>
 
 <script>
 function updateCharCount() {
     var textBox = document.getElementById('n');
     var charCount = textBox.value.length;
-    document.getElementById('charCount').innerText = charCount + ' characters';
+    textBox.placeholder = charCount + ' characters';
 }
 </script>
+
 
 
 <p font-size:12px><strong>Letter templates</strong><br>
